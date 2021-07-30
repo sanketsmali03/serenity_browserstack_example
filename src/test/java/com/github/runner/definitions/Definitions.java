@@ -24,11 +24,10 @@ public class Definitions {
 			EnvironmentVariables environmentVariables = SystemEnvironmentVariables.createEnvironmentVariables();
 			
 
-			//String username = System.getenv("BROWSERSTACK_USERNAME");
+			String username = System.getenv("BROWSERSTACK_USERNAME");
 
-			//String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
-			String username ="sanketmali4";
-			String accessKey="XaqpcHttuyFzXSzC3uNM";
+			String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
+	
 			String environment = System.getProperty("environment");
 			System.out.println("environment is " + environment);
 			DesiredCapabilities capabilities = new DesiredCapabilities();
